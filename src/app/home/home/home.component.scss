@@ -1,0 +1,112 @@
+.parallax {
+  /* The image used */
+  background-image: url("../../../assets/images/home/darkened_brushes.jpg");
+  //   -webkit-filter: blur(1.5px); /* Chrome, Safari, Opera */
+  /* Set a specific height */
+  min-height: 900px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+.home-fonts {
+  font-family: "Amatic SC", cursive;
+  color: white;
+}
+
+.centered-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  padding-bottom: 100px;
+}
+
+.centered-contact {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.company-name {
+  font-size: 100px;
+  padding-bottom: 60px;
+  font-weight: bold;
+}
+.company-moto {
+  font-size: 40px;
+  padding-bottom: 60px;
+  font-weight: bold;
+}
+
+.contact {
+  flex: 1;
+  font-size: 35px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.info-home {
+  padding: 32px;
+  color: #ffffff;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.home-rows {
+  max-width: 920px;
+  margin: 32px auto;
+}
+
+.welcome-box-image {
+  flex: 5;
+  text-align: center;
+}
+
+.welcome-box-text {
+  flex: 3;
+  order: 3;
+  color: #000000;
+  text-align: left;
+  padding-left: 80px;
+}
+
+.welcome-box-text h2 {
+  color: #4286f4;
+}
+
+.welcome-box-image img {
+  max-width: 60% !important;
+  height: auto;
+  object-fit: contain;
+}
+
+.flex-image-first-img {
+  order: 1;
+}
+
+.flex-image-first-txt {
+  order: 2;
+}
+
+.flex-text-first-txt {
+  order: 1;
+}
+
+.flex-text-first-img {
+  order: 2;
+}
