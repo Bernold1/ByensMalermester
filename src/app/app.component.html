@@ -2,10 +2,49 @@
   <button
     mat-icon-button
     class="example-icon"
+    [matMenuTriggerFor]="menu"
     aria-label="Example icon-button with menu icon"
   >
     <mat-icon>menu</mat-icon>
   </button>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+    [routerLink]="['/home']"
+  >
+    <mat-icon>home</mat-icon>
+  </button>
+  <mat-menu class="menu" #menu="matMenu">
+    <button mat-menu-item [routerLink]="['/private']">
+      <mat-icon>house</mat-icon>
+      <span>Det private hjem</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>location_city</mat-icon>
+      <span>Institutioner &#38; offentlig</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>apartment</mat-icon>
+      <span>Boligforeninger</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>store_mall_directory</mat-icon>
+      <span>Butik &#38; kontor</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>groups</mat-icon>
+      <span>Enterpriser</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>collections</mat-icon>
+      <span>Galleri</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>perm_phone_msg</mat-icon>
+      <span>Kontakt</span>
+    </button>
+  </mat-menu>
   <span class="title toolbarFont">Byens Malermester</span>
   <span class="example-spacer"></span>
   <a
@@ -24,4 +63,9 @@
     <mat-icon>email</mat-icon>
   </button>
 </mat-toolbar>
+<div class="toolbaroverride-footer">
+  <mat-icon>phone</mat-icon>
+  +45 29 more nums
+</div>
+
 <router-outlet></router-outlet>

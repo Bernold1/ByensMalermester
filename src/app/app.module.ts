@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { PrivateModule } from './private/private.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +21,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    MatMenuModule,
+    PrivateModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,9 +1,9 @@
 .parallax {
-  /* The image used */
+  /* The image used inspired by: https://unsplash.com/photos/qXqXTTfLdEw */
   background-image: url("../../../assets/images/home/darkened_brushes.jpg");
   //   -webkit-filter: blur(1.5px); /* Chrome, Safari, Opera */
   /* Set a specific height */
-  min-height: 900px;
+  min-height: 920px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -56,63 +56,6 @@
   font-weight: bold;
 }
 
-.info-home {
-  padding: 32px;
-}
-
-.gradiant {
-  background-image: linear-gradient(150deg, #72736d, #251c15);
-}
-.home-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-}
-.home-rows {
-  max-width: 920px;
-  margin: 32px auto;
-}
-
-.welcome-box-image {
-  flex: 5;
-  text-align: center;
-}
-
-.welcome-box-text {
-  flex: 3;
-  order: 3;
-  color: #ffffff;
-  text-align: left;
-  padding-left: 80px;
-}
-
-.welcome-box-text h2 {
-  color: #ffffff;
-}
-
-.welcome-box-image img {
-  max-width: 60% !important;
-  height: auto;
-  object-fit: contain;
-}
-
-.flex-image-first-img {
-  order: 1;
-}
-
-.flex-image-first-txt {
-  order: 2;
-}
-
-.flex-text-first-txt {
-  order: 1;
-}
-
-.flex-text-first-img {
-  order: 2;
-}
-
-.info-home img {
-  border-radius: 50%;
+h2 {
+  font-family: "Montserrat", sans-serif;
 }

@@ -2,15 +2,35 @@
   flex: 1 1 auto;
 }
 
-mat-toolbar {
+@media (min-width: 1200px) {
+  mat-toolbar {
+    background-color: transparent;
+    z-index: 999;
+    color: #ffffff;
+  }
+}
+
+.toolbaroverride {
   position: fixed;
+}
+
+.toolbaroverride-footer {
+  bottom: 0;
   background-color: transparent;
   z-index: 999;
   color: #ffffff;
+  text-align: center;
+}
+
+.menu {
+  text-decoration: none;
 }
 
 .toolbarFont {
   font-family: "Amatic SC", cursive;
   font-size: x-large;
   font-weight: bold;
+}
+button {
+  outline: none;
 }
