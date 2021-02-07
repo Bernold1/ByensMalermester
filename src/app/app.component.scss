@@ -14,12 +14,16 @@
   position: fixed;
 }
 
-.toolbaroverride-footer {
+.footer {
   bottom: 0;
-  background-color: transparent;
+  background: transparent;
   z-index: 999;
   color: #ffffff;
   text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-size: x-large;
+  font-weight: 600;
+  padding-bottom: 20px;
 }
 
 .menu {
