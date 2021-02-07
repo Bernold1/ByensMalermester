@@ -58,9 +58,11 @@
 
 .info-home {
   padding: 32px;
-  color: #ffffff;
 }
 
+.gradiant {
+  background-image: linear-gradient(150deg, #72736d, #251c15);
+}
 .home-container {
   display: flex;
   justify-content: center;
@@ -80,13 +82,13 @@
 .welcome-box-text {
   flex: 3;
   order: 3;
-  color: #000000;
+  color: #ffffff;
   text-align: left;
   padding-left: 80px;
 }
 
 .welcome-box-text h2 {
-  color: #4286f4;
+  color: #ffffff;
 }
 
 .welcome-box-image img {
@@ -109,4 +111,8 @@
 
 .flex-text-first-img {
   order: 2;
+}
+
+.info-home img {
+  border-radius: 50%;
 }
