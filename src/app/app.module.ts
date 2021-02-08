@@ -10,10 +10,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { PrivateModule } from './private/private.module';
-import { BoligforeningerComponent } from './boligforeninger/boligforeninger.component';
 
 @NgModule({
-  declarations: [AppComponent, BoligforeningerComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
