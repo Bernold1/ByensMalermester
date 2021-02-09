@@ -55,13 +55,15 @@
   >
     <mat-icon>facebook</mat-icon>
   </a>
-  <button
+  <a
     mat-icon-button
     class="example-icon"
     aria-label="Example icon-button with share icon"
+    [href]="emailstring"
+    target="_top"
   >
     <mat-icon>email</mat-icon>
-  </button>
+  </a>
 </mat-toolbar>
 <div class="gradiant">
   <router-outlet></router-outlet>

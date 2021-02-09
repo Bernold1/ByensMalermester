@@ -54,7 +54,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 300px) {
   .parallax {
     /* The image used inspired by: https://unsplash.com/photos/qXqXTTfLdEw */
     background-image: url("../../../assets/images/home/darkened_brushes.jpg");
@@ -76,6 +76,7 @@ h2 {
     line-height: 30pt;
     overflow: hidden;
     white-space: nowrap;
+    text-align: center;
   }
   .company-moto {
     font-size: 30px;
@@ -84,6 +85,7 @@ h2 {
     line-height: 25pt;
     overflow: hidden;
     white-space: nowrap;
+    text-align: center;
   }
 
   .contact {
@@ -95,7 +97,7 @@ h2 {
   }
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 700px) {
   .company-name {
     font-size: 90px;
     padding-bottom: 30px;
@@ -119,5 +121,33 @@ h2 {
     padding-bottom: 20px;
     font-weight: bold;
     line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .company-name {
+    font-size: 100px;
+    padding-bottom: 60px;
+    font-weight: bold;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .company-moto {
+    font-size: 40px;
+    padding-bottom: 60px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 10px;
+  }
+
+  .contact {
+    flex: 1;
+    font-size: 35px;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+  .parallax {
+    min-height: 920px;
   }
 }
