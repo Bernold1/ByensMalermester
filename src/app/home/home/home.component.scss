@@ -13,8 +13,38 @@
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+  .parallax {
+    /* The image used inspired by: https://unsplash.com/photos/qXqXTTfLdEw */
+    background-image: url("../../../assets/images/home/darkened_brushes.jpg");
+    //   -webkit-filter: blur(1.5px); /* Chrome, Safari, Opera */
+    /* Set a specific height */
+    min-height: 800px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .company-name {
+    font-size: 50px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    line-height: 30pt;
+  }
+  .company-moto {
+    font-size: 30px;
+    padding-bottom: 60px;
+    font-weight: bold;
+    line-height: 25pt;
+  }
+
+  .contact {
+    flex: 1;
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    line-height: 30px;
   }
 }
 

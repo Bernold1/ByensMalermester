@@ -1,1 +1,28 @@
-<p>kontakt works!</p>
+<div>
+  <h1 class="heading header-font">Kontakt information</h1>
+  <hr />
+</div>
+<div class="contact-container z-placement">
+  <mat-grid-list class="" cols="4" rowHeight="50">
+    <mat-grid-tile [colspan]="4" [rowspan]="2">
+      <mat-icon>phone</mat-icon>
+      &nbsp; Telefon: +45 29 36 34 44
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="4" [rowspan]="2">
+      <a
+        mat-icon-button
+        class="white-icon"
+        aria-label="facebook link"
+        href="https://www.facebook.com/byensmalermester.dk"
+      >
+        <mat-icon>facebook</mat-icon>
+      </a>
+      <mat-icon>keyboard_backspace</mat-icon>
+      &nbsp; Klik ikonet for at besøge vores Facebook side
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="4" [rowspan]="2">
+      <mat-icon>email</mat-icon>
+      &nbsp; email: email@byensmalermester.dk
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

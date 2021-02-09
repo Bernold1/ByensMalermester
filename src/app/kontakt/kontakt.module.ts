@@ -3,13 +3,16 @@ import { CommonModule } from '@angular/common';
 
 import { KontaktRoutingModule } from './kontakt-routing.module';
 import { KontaktComponent } from './kontakt/kontakt.component';
-
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [KontaktComponent],
   imports: [
     CommonModule,
-    KontaktRoutingModule
-  ]
+    KontaktRoutingModule,
+    MatGridListModule,
+    MatIconModule,
+  ],
 })
-export class KontaktModule { }
+export class KontaktModule {}
