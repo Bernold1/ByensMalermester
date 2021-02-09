@@ -1,1 +1,39 @@
-<p>gallery works!</p>
+<div class="masonry-container top-placement">
+  <div>
+    <h1 class="heading header-font">Vores arbejde</h1>
+    <hr />
+    <br />
+  </div>
+
+  <ngx-masonry
+    [options]="masonryOptions"
+    style="width: 90vw"
+    [ordered]="true"
+    (itemsLoaded)="itemsLoaded()"
+  >
+    <div
+      ngxMasonryItem
+      [prepend]="image[0]"
+      *ngFor="let image of masonryImages; index as idx"
+      style="width: 30%"
+    >
+      <img
+        alt="Byens Malermester Kvalitets maler i Silkeborg"
+        [src]="image[1]"
+        width="100%"
+      />
+    </div>
+  </ngx-masonry>
+
+  <button
+    mat-raised-button
+    color="primary"
+    *ngIf="limit < 100"
+    (click)="showMoreImages()"
+  >
+    Vis flere billeder
+  </button>
+  <br />
+  <h2 class="heading header-font" *ngIf="limit >= 100">Ikke flere billeder</h2>
+  <br />
+</div>
