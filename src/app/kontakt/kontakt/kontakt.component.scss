@@ -16,7 +16,19 @@
 
 .white-icon {
   color: white;
+  text-align: center;
 }
 // .z-placement {
 //   z-index: 999;
 // }
+@media only screen and (max-width: 600px) {
+  .contact-container {
+    padding: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+  }
+}
+a {
+  cursor: pointer;
+  color: white;
+}

@@ -12,42 +12,6 @@
   background-size: cover;
 }
 
-@media only screen and (max-width: 600px) {
-  .parallax {
-    /* The image used inspired by: https://unsplash.com/photos/qXqXTTfLdEw */
-    background-image: url("../../../assets/images/home/darkened_brushes.jpg");
-    //   -webkit-filter: blur(1.5px); /* Chrome, Safari, Opera */
-    /* Set a specific height */
-    min-height: 800px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .company-name {
-    font-size: 50px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    line-height: 30pt;
-  }
-  .company-moto {
-    font-size: 30px;
-    padding-bottom: 60px;
-    font-weight: bold;
-    line-height: 25pt;
-  }
-
-  .contact {
-    flex: 1;
-    font-size: 30px;
-    padding-bottom: 20px;
-    font-weight: bold;
-    line-height: 30px;
-  }
-}
-
 .home-fonts {
   font-family: "Amatic SC", cursive;
   color: white;
@@ -88,4 +52,72 @@
 
 h2 {
   font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .parallax {
+    /* The image used inspired by: https://unsplash.com/photos/qXqXTTfLdEw */
+    background-image: url("../../../assets/images/home/darkened_brushes.jpg");
+    //   -webkit-filter: blur(1.5px); /* Chrome, Safari, Opera */
+    /* Set a specific height */
+    min-height: 800px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .company-name {
+    padding-top: 20px;
+    font-size: 50px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    line-height: 30pt;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .company-moto {
+    font-size: 30px;
+    padding-bottom: 60px;
+    font-weight: bold;
+    line-height: 25pt;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .contact {
+    flex: 1;
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .company-name {
+    font-size: 90px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    line-height: 70pt;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .company-moto {
+    font-size: 30px;
+    padding-bottom: 60px;
+    font-weight: bold;
+    line-height: 25pt;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .contact {
+    flex: 1;
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    line-height: 30px;
+  }
 }

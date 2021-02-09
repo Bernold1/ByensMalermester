@@ -8,7 +8,7 @@ import { NgxMasonryOptions, NgxMasonryComponent } from 'ngx-masonry';
 })
 export class GalleryComponent implements OnInit {
   public masonryOptions: NgxMasonryOptions = {
-    gutter: 20,
+    gutter: 10,
   };
 
   @ViewChild(NgxMasonryComponent) masonry?: NgxMasonryComponent;
