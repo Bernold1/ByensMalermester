@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  emailstring: string = 'mailto:email@byensmalermester.dk?Subject=Tilbud';
   constructor() { }
 
   ngOnInit(): void {

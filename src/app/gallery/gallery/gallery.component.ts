@@ -17,10 +17,7 @@ export class GalleryComponent implements OnInit {
   limit = 15;
 
   dummyPictures: [boolean, string][] = [
-    [false, '../../../assets/images/gallery/1.jpg'],
     [false, '../../../assets/images/gallery/2.jpg'],
-    [false, '../../../assets/images/gallery/3.jpg'],
-    [false, '../../../assets/images/gallery/4.jpg'],
     [false, '../../../assets/images/gallery/5.jpg'],
     [false, '../../../assets/images/gallery/6.jpg'],
     [false, '../../../assets/images/gallery/7.jpg'],
@@ -48,7 +45,6 @@ export class GalleryComponent implements OnInit {
     [false, '../../../assets/images/gallery/29.jpg'],
     [false, '../../../assets/images/gallery/30.jpg'],
     [false, '../../../assets/images/gallery/31.jpg'],
-    [false, '../../../assets/images/gallery/32.jpg'],
     [false, '../../../assets/images/gallery/33.jpg'],
     [false, '../../../assets/images/gallery/34.jpg'],
     [false, '../../../assets/images/gallery/35.jpg'],
